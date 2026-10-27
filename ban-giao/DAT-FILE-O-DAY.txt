@@ -1,0 +1,19 @@
+Thư mục bàn giao emote — mỗi emote 1 thư mục con theo mã, ví dụ:
+
+ban-giao/
+  e02-suy-nghi/
+    hanni-fox-e02-suy-nghi-vao@512.webp     clip Vào
+    hanni-fox-e02-suy-nghi-vao@256.webp
+    hanni-fox-e02-suy-nghi-giu@512.webp     clip Giữ (lặp liền mạch)
+    hanni-fox-e02-suy-nghi-giu@256.webp
+    hanni-fox-e02-suy-nghi-ra@256.webp      clip Ra
+    hanni-fox-e02-suy-nghi-bt1@256.webp     biến thể 1, 2…
+    hanni-fox-e02-suy-nghi.png              ảnh tĩnh 512 px (dự phòng khi giảm chuyển động)
+    nguon/                                  file dựng (After Effects / Blender / Spine / PSD…)
+  e15-viet-chu/
+    hanni-fox-e15-viet-chu.png              emote "ảnh tĩnh": chỉ cần 1 PNG
+  nut-tro-ly/
+    hanni-fox-n1-nghi@256.webp …            nút cáo tròn mở trợ lý (N1–N7)
+
+Thông số: 00-Brief-linh-vat-Hanni.pdf mục 8. Soát trước khi gửi: mục 9 (checklist).
+Làm trước: trợ lý AI (E02, E10, E39, E42, E00, E01, A1–A4, nút N1–N7).

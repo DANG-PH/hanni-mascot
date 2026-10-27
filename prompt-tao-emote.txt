@@ -1,0 +1,363 @@
+PROMPT TẠO EMOTE CHO CÁO HANNI
+==============================
+Đọc kèm: 00-Brief-linh-vat-Hanni.pdf (mục 4 = cáo trong trợ lý AI, mục 5 = danh sách emote, mục 8 = thông số bàn giao).
+Prompt viết bằng tiếng Anh vì công cụ tạo ảnh/video hiểu tiếng Anh tốt nhất. Luôn đính kèm ảnh tham chiếu nhan-vat/cao-hanni-goc.png.
+
+MỨC ĐỘNG (ghi ở cuối dòng tên mỗi emote)
+---------------------------------------
+ĐỦ BỘ  = làm mọi clip VÀO / GIỮ / RA / BT bên dưới.
+NHẸ    = chỉ clip chính (GIỮ hoặc VÀO nếu emote 1 lần); bỏ qua RA / BT.
+TĨNH   = chỉ cần ảnh POSE (PNG), KHÔNG làm ảnh động — tính năng ít người dùng.
+Làm trước: trợ lý AI (E02, E10, E39, E42, E00, E01, A1–A4, nút N1–N7).
+
+CÁCH DÙNG
+---------
+Bước 1 — Ảnh tư thế (Midjourney / ChatGPT / Gemini / Ideogram…):
+    [A. NHÂN VẬT GỐC] + [B. KHUNG HÌNH] + [POSE của emote]   (+ [C. CẤM] nếu công cụ có ô negative prompt)
+    Midjourney: thêm --cref <link ảnh gốc> --cw 100 --ar 1:1 (hoặc --oref ở bản mới). ChatGPT/Gemini: đính kèm ảnh gốc và ghi
+    "Use the attached image as the exact character reference."
+Bước 2 — Ảnh động (Kling / Runway / Veo / Pika / Luma… chế độ ảnh → video, ảnh tư thế làm khung đầu):
+    [D. KHUÔN CHUYỂN ĐỘNG] với {MOTION} = dòng VÀO / GIỮ / RA / BIẾN THỂ của emote, {DURATION} = số giây trong ngoặc.
+    Mỗi clip tạo riêng. Clip GIỮ cần lặp liền mạch: chọn chế độ "loop" nếu có, hoặc dùng cùng một ảnh làm khung đầu và khung cuối.
+Bước 3 — Tách nền xanh #0047FF, cắt vòng lặp, xuất WebP trong suốt 512/256 px + PNG tĩnh (mục 8 của brief). Soát lại: AI hay đổi
+    trang phục, thêm ngón tay, mất màu nâu ở tay chân, đổi chữ trên sách.
+
+A. NHÂN VẬT GỐC (dán ở đầu MỌI prompt ảnh)
+------------------------------------------
+Hanni the fox, the mascot of a Chinese-learning app for Vietnamese learners. A chibi 3D cartoon red fox in a soft Pixar-like 3D
+render with plush, fluffy fur. Big round head about as tall as the body, large glossy dark-brown eyes with small eyelashes and bright
+catchlights, soft brown eyebrows, a small dark-brown button nose, rosy pink cheeks, a warm friendly smile. Fur: vivid red-orange
+(#E14835) with deeper red shading (#C71E1A); cream-white muzzle, chest and tail tip (#F4DED1); dark chocolate-brown ear tips, hands
+and feet like socks (#3C0F08); pink paw pads; tall pointed ears with peach inner fur (#F2AB83); one big fluffy red tail with a cream
+tip. Outfit: a traditional Chinese Hanfu — cream (#FAEDE1) cross-collar robe with wide sleeves, red (#C71E1A) trims and panels
+embroidered with gold (#E8B25E) auspicious cloud patterns, a red sash with gold trim, and a red tassel pendant with a round gold
+medallion showing the Chinese character 汉. Usually holds a small red book with "HanNi" on the cover and a gold plum blossom.
+Personality: cheerful, curious, encouraging study buddy — never mocking, never angry.
+
+B. KHUNG HÌNH (dán sau phần A)
+------------------------------
+Full body, centered, three-quarter front view, feet on the same ground line near the bottom (about 92% of the height), the character
+fills about 80% of a square 1:1 canvas, soft studio lighting with a gentle rim light, no cast shadow, solid flat pure blue background
+(#0047FF), no other objects unless listed, no text except "HanNi" on the book and 汉 on the pendant. Same character as the reference.
+
+C. CẤM (ô negative prompt)
+--------------------------
+realistic fox, photo, human hands, extra fingers, extra limbs, two tails, different outfit, modern clothes, armor, changed colors,
+missing brown socks, angry, scary, crying, sarcastic, mocking, blood, English text, letters, watermark, logo, gradient background,
+scenery, floor, cropped ears, cropped tail, motion blur, blurry
+
+D. KHUÔN CHUYỂN ĐỘNG (ảnh → video)
+----------------------------------
+Animate the character in the image: {MOTION}. Throughout the whole clip keep subtle secondary motion: gentle breathing (chest rises
+and falls every 2 seconds), natural blinks every 2-4 seconds, an occasional ear twitch, a slow tail sway, sleeves and the pendant
+tassel follow the body. Never fully frozen. Camera locked: no zoom, no pan, no cut, no shake. Keep exactly the same character design,
+fur colors, brown sock-like paws, cream-and-red Hanfu with gold clouds, the 汉 pendant and the red HanNi book. Background stays solid
+flat blue #0047FF. {DURATION} seconds, 24 fps. [Chỉ với clip GIỮ:] The last frame matches the first frame exactly for a seamless loop.
+
+Clip VÀO bắt đầu từ tư thế E00 Nghỉ; clip RA kết thúc ở tư thế E00 Nghỉ — tạo clip VÀO/RA bằng ảnh E00 + ảnh tư thế của emote làm khung
+đầu/cuối (công cụ có "start + end frame": Kling, Luma, Runway…).
+
+==============================================================================================================================
+DANH SÁCH EMOTE — POSE = ảnh tư thế · VÀO / GIỮ / RA / BT = chuyển động từng clip (thời lượng trong ngoặc)
+==============================================================================================================================
+
+E00 · NGHỈ (tư thế gốc) — P0 · ĐỦ BỘ
+POSE: standing relaxed, holding the red HanNi book against the chest with both paws, gentle closed-mouth smile, looking at the viewer.
+GIỮ (3 s): stands calmly, only breathing, blinking, ear twitch and tail sway.
+BT1 (3 s): glances left, then right, then back to the viewer.
+BT2 (2 s): a quick double blink and a small head tilt.
+BT3 (3 s): opens the book, peeks at a page, closes it, smiles.
+
+E01 · CHÀO — P0 · ĐỦ BỘ
+POSE: right paw raised high waving, pink paw pad visible, left arm holding the book, big open-mouth smile, head slightly tilted.
+VÀO (0.5 s): lifts the right paw up from the resting pose.
+GIỮ (2 s): waves the raised paw left-right twice, head tilts with the wave, one blink.
+RA (0.5 s): lowers the paw back to hug the book.
+BT1 (2 s): waves while bouncing gently on its toes.
+BT2 (2 s): puts the book under the arm and waves with both paws.
+BT3 "tạm biệt" (2 s): waves, turns and takes two small steps away, looks back and waves again.
+
+E02 · SUY NGHĨ — P0 (dùng nhiều nhất: mọi lúc chờ AI) · ĐỦ BỘ
+POSE: one paw on the chin, eyes looking up to the upper left, slight head tilt, small curious closed-mouth smile, book tucked under
+the other arm, three small cream-colored round dots floating above the head.
+VÀO (0.4 s): raises the paw to the chin and looks up.
+GIỮ (1.6 s): the three dots appear one by one above the head then fade together, head tilts a little left and right, tail sways.
+RA (0.4 s): a small gold light bulb pops above the head, eyes brighten "aha", paw drops.
+BT1 (1.6 s): taps one finger on the cheek while thinking.
+BT2 (2 s): flips through the HanNi book searching, then looks up thinking.
+
+E03 · ĐANG TẢI — P0 · ĐỦ BỘ
+POSE: mid-step jogging in place, holding the book, determined happy face.
+GIỮ (1.2 s): jogs in place with a perfect seamless loop, tail swings in a circle.
+BT1 (1.2 s): the book is open and its pages flip continuously.
+BT2 (1.2 s): spins the book on one finger like a basketball.
+
+E04 · VUI MỪNG — P0 · ĐỦ BỘ
+POSE: jumping in the air with both arms raised, the book tossed above the head, eyes closed in joy, wide smile, a few red and gold
+paper confetti pieces.
+VÀO (1.5 s): crouches down, jumps up with both arms raised, tosses the book, lands and catches it, confetti falls.
+GIỮ (2 s): stands hugging the book, bounces softly, winks, tail wags fast.
+RA (0.5 s): settles into the resting pose.
+BT1 (1.5 s): spins around once in the air before landing.
+BT2 (1.5 s): claps paws happily three times.
+BT3 (1.5 s): throws the book up, it flips and lands back in its paws.
+
+E05 · TIẾC NHƯNG CỐ LÊN — P0 (không khóc, không thất vọng nặng) · ĐỦ BỘ
+POSE: standing upright, one paw raised in a small fist "you can do it", gentle encouraging smile, ears up, book under the other arm.
+VÀO (2 s): ears droop, shoulders slump, looks down at the book for a moment; takes a breath, looks up and raises a small fist with an
+encouraging smile.
+GIỮ (2 s): holds the encouraging pose, nods once.
+RA (0.5 s): lowers the fist into the resting pose.
+BT1 (2 s): hugs the book, nods to itself "next time".
+BT2 (2 s): pats its own chest confidently.
+
+E06 · NGỒI CHỜ (màn trống) — P0 · ĐỦ BỘ
+POSE: sitting on the floor hugging its fluffy tail, legs swinging, relaxed content smile, the closed book beside it.
+GIỮ (3 s): swings its legs, looks around slowly, one small yawn (no sleeping, no "zZz").
+RA (0.5 s): stands up and picks up the book.
+BT1 (3 s): draws a little circle on the ground with one finger.
+BT2 (3 s): peeks into a small empty cardboard box and shrugs cheerfully.
+
+E07 · ĐÚNG RỒI — P1 (cỡ nhỏ 40–56 px: động tác to, rõ) · ĐỦ BỘ
+POSE: nodding with one eye winking, one paw raised showing the pink paw pad, a small gold sparkle star.
+VÀO (0.8 s): quick nod, wink, raises the paw, a gold star sparkles once.
+BT1 (0.8 s): thumbs-up with a big grin.
+BT2 (0.8 s): small happy hop.
+BT3 "gần đúng" (0.8 s): nods slowly with a thoughtful smile, holds up a paw with finger and thumb almost touching ("almost").
+
+E08 · THỬ LẠI NHÉ — P1 (không lắc đầu, không xua tay) · ĐỦ BỘ
+POSE: head tilted, scratching behind one ear, sheepish smile, ears slightly lowered.
+VÀO (0.8 s): tilts the head, scratches behind the ear, ears dip then pop back up.
+BT1 (0.8 s): sticks the tongue out playfully.
+BT2 (0.8 s): makes a determined small fist "one more time".
+
+E09 · LẮNG NGHE — P1 · NHẸ
+POSE: leaning forward, both ears perked up tall, one paw cupped behind an ear, attentive face, small sound-wave arcs near the ear.
+VÀO (0.3 s): ears perk up, paw goes behind the ear.
+GIỮ (1 s): two or three small cream sound-wave arcs pulse toward the ear, ears twitch to the sound.
+RA (0.3 s): paw drops, satisfied nod.
+BT1 (1 s): holds a small red microphone and listens with eyes closed.
+
+E10 · ĐỌC MẪU / GIẢNG BÀI (chữ trợ lý AI đang hiện dần, phát âm mẫu) — P0 · ĐỦ BỘ
+POSE: speaking clearly with mouth open, one paw extended forward palm up, small music-note and sound-wave shapes coming from the mouth.
+VÀO (0.3 s): takes a breath and opens one paw forward.
+GIỮ (1 s): mouth opens and closes in an even rhythm, little notes float out.
+RA (0.3 s): closes the mouth, smiles.
+BT1 (1 s): reads aloud from the open HanNi book.
+BT2 "giảng bài" (1.5 s, dùng trong khung chat AI): holds the small cream notebook in one paw and explains while talking, the other
+paw gestures toward the viewer, nods at key points.
+
+E11 · À HA! (Hán Việt — "cái này mình biết rồi") — P1 · NHẸ
+POSE: eyes wide with delight, ears straight up, one finger pointing up, a glowing gold light bulb above the head.
+VÀO (1.2 s): eyes widen, ears shoot up, snaps fingers, the light bulb lights up.
+GIỮ (2 s): nods happily while the bulb keeps glowing softly.
+RA (0.5 s): bulb fades, back to rest.
+BT1 (1.2 s): taps its forehead "of course!" and laughs.
+
+E12 · ĂN MỪNG LỚN (cột mốc chuỗi ngày, huy hiệu) — P1 · ĐỦ BỘ
+POSE: landing from a jump holding up a big red-and-gold flame emblem (streak symbol) over the head, eyes sparkling, confetti burst.
+VÀO (2.5 s): crouches, jumps and spins once in the air, lands raising the flame emblem, red and gold confetti bursts, winks.
+GIỮ (2 s): proudly holds the flame up, bounces, flame flickers.
+RA (0.5 s): lowers the flame and hugs the book.
+BT 1/3/7/30/100 (2.5 s): same as VÀO but the flame shows the number 1, 3, 7, 30 or 100 in gold.
+BT huy hiệu (2.5 s): same jump but holding up a round gold medal on a red ribbon.
+
+E13 · GIƠ LÁ CHẮN — P1 · NHẸ
+POSE: holding a round red shield with a gold rim and gold cloud pattern in front of the body, confident smile.
+VÀO (1.2 s): pulls the shield out from behind the back, the shield flashes with light, nods.
+GIỮ (2 s): holds the shield proudly, the rim glints once.
+RA (0.5 s): puts the shield away.
+
+E14 · NHẮC KHẼ (chưa học hôm nay, có từ đến hạn) — P1 (nhắc nhẹ, không doạ) · NHẸ
+POSE: holding a small gold hourglass, glancing between the hourglass and the viewer, slightly impatient cute expression.
+GIỮ (2 s): looks at the hourglass, then at the viewer, taps one foot.
+BT1 (2 s): rings a small gold hand bell twice.
+
+E15 · VIẾT CHỮ — P2 · TĨNH
+POSE: holding a Chinese calligraphy brush, writing the character 汉 on a sheet of cream paper, focused happy face.
+VÀO (0.5 s): picks up the brush.
+GIỮ (2 s): writes 汉 stroke by stroke, then admires it and nods.
+RA (0.5 s): puts the brush down.
+BT1 (2 s): writes 你 then 好.
+
+E16 · ĐỌC SÁCH — P2 · TĨNH
+POSE: reading the open HanNi book held in both paws, eyes following the lines, calm smile.
+GIỮ (2 s): eyes read left to right, turns one page, ear twitches at the page turn.
+BT1 (2 s): finds something interesting and points at the page.
+
+E17 · LÀM BÀI — P2 · TĨNH
+POSE: wearing small round glasses, holding a pencil, looking at an exam sheet, focused expression.
+GIỮ (2 s): taps the pencil on the chin, writes a little, nods.
+E17b · HẾT GIỜ! (TĨNH — chỉ ảnh tư thế): startled, both paws on the cheeks, a gold hourglass runs out; then exhales and smiles (no panic).
+
+E18 · CHỤP ẢNH (quét ảnh học từ) — P2 · NHẸ
+POSE: holding up a smartphone to take a photo, a small camera flash sparkle.
+VÀO (0.5 s): raises the phone, flash goes off.
+GIỮ (1.5 s): holds a magnifying glass and scans it back and forth over a small photo card.
+RA (0.5 s): lowers the phone, happy.
+
+E19 · TÌM KIẾM (không thấy, 404) — P2 · TĨNH
+POSE: holding a big magnifying glass, one eye magnified through the lens, puzzled friendly smile.
+VÀO (1 s): looks around through the magnifying glass, then shrugs at the viewer "nothing here".
+GIỮ (2 s): keeps scanning left and right with the magnifying glass.
+BT1 "404" (2 s): scratches the head looking at a small paper map turned the wrong way.
+
+E20 · CÚP VÔ ĐỊCH — P2 · TĨNH
+POSE: lifting a shiny gold trophy over the head, eyes closed in a big happy smile.
+VÀO (1.5 s): raises the trophy high, it sparkles.
+GIỮ (2 s): holds the trophy proudly, bounces.
+
+E21 · CÁO GIÁO VIÊN — P2 · TĨNH
+POSE: wearing round glasses, holding a wooden pointer, standing next to a small chalkboard with 你好 written on it, kind smile.
+GIỮ (3 s): points at the board, nods kindly, adjusts the glasses.
+
+E22 · VƯƠNG MIỆN (Premium) — P2 · TĨNH
+POSE: a small gold crown sitting between the ears, proud happy face, sparkles.
+VÀO (1.5 s): a small gold crown drops from above and lands between the ears, the fox adjusts it and sparkles appear.
+GIỮ (2 s): poses proudly, the crown glints.
+
+E23 · CHƠI GAME — P2 · TĨNH
+POSE: holding a red game controller, determined eyes, tongue slightly out in concentration.
+GIỮ (1.2 s): presses buttons quickly, leans with the action, tail wags fast.
+
+E24 · MẤT KẾT NỐI — P2 · TĨNH
+POSE: holding an unplugged cable end in each paw, puzzled cute face, a faded wifi symbol above the head.
+GIỮ (2 s): looks at both cable ends, tries to plug them together, the wifi symbol flickers.
+
+E25 · CHỈ ĐƯỜNG (hướng dẫn) — P2 (cần thêm bản lật gương chỉ sang trái) · NHẸ
+POSE: standing slightly sideways, one paw pointing to the right, the other holding the book, friendly helpful smile.
+GIỮ (2 s): the pointing paw taps the air twice, looks at the viewer then at the pointed direction.
+
+E26 · THANH TOÁN — P1 (không vẽ tiền giấy thật, không logo ngân hàng/MoMo/payOS) · NHẸ
+POSE: holding a red lucky envelope (lì xì) with a gold plum blossom in one paw and a smartphone showing a simple QR code in the other,
+cheerful trustworthy smile.
+VÀO (0.5 s): pulls a red lucky envelope out of the wide sleeve.
+GIỮ (2 s): holds up the phone, the QR code border blinks, a gold ancient coin with a square hole bounces lightly in the other paw.
+RA (0.5 s): tucks the envelope away.
+BT1 (2 s): drops a gold coin into a small red piggy bank, the piggy bank wiggles.
+
+E27 · CHỜ NGÂN HÀNG XÁC NHẬN — P1 · NHẸ
+POSE: hugging the red lucky envelope, looking at a small gold hourglass, tiptoeing and peeking, ears perked up.
+GIỮ (2 s): three small gold coins bounce one after another like a "..." while the hourglass flows.
+
+E28 · CẢM ƠN — P1 · NHẸ
+POSE: a traditional Chinese thank-you salute (one fist covered by the other paw), bowing slightly, eyes closed in a warm smile, gold
+coins and plum petals sparkling around.
+VÀO (2 s): bows with the salute, rises with a big grateful smile, a small gold crown drops onto the head, sparkles.
+GIỮ (2 s): beams happily with the crown, sparkles twinkle.
+
+E29 · KHÔNG SAO ĐÂU — P1 · NHẸ
+POSE: tucking the red envelope back into the sleeve, other paw waving gently "no problem", relaxed reassuring smile.
+VÀO (1.5 s): puts the envelope away, gives a gentle reassuring wave, winks.
+
+E30 · PHONG THƯ (mời bạn, email) — P2 · TĨNH
+POSE: holding a red envelope letter with a plum-blossom stamp, happy face.
+VÀO (1.5 s): lets the letter go and it folds into a paper crane that flies away.
+BT "mời bạn" (1.5 s): raises the letter with both paws, a small heart pops out.
+
+E31 · BÀI TẬP MỚI — P2 · TĨNH
+POSE: holding a sheet of homework paper, reading it with an eager nod.
+VÀO (1.2 s): a homework sheet floats down, the fox catches it, reads it, nods "on it", tucks it into the book.
+
+E32 · Ổ KHOÁ — P2 · TĨNH
+POSE: hugging a gold padlock with a key in it, calm reassured smile.
+VÀO (1.2 s): turns the key "click", the padlock flashes, the fox nods confidently.
+
+E33 · XEM VIDEO — P2 · TĨNH
+POSE: sitting and holding a red popcorn box, eyes fixed forward as if watching a screen, delighted expression.
+GIỮ (2 s): eats a piece of popcorn, gasps in surprise at the story, keeps watching.
+
+E34 · CỐ NHỚ (từ khó nhớ) — P2 · TĨNH
+POSE: both paws on the head, eyes closed concentrating, a small sticky note on the forehead fluttering.
+GIỮ (2 s): mutters to itself remembering, then opens the eyes and makes a determined fist.
+
+E35 · VẼ THANH ĐIỆU — P2 · TĨNH
+POSE: using the cream tail tip like a brush, drawing a glowing curved line in the air, playful focused face.
+GIỮ (2 s): draws the four Mandarin tone marks one after another in the air — flat ˉ, rising ˊ, dipping ˇ, falling ˋ — its head moves
+up and down following each tone's pitch (the third tone dips low then rises).
+
+E36 · HẾT PIN (hết lượt AI hôm nay) — P1 (mời Premium nhẹ nhàng) · ĐỦ BỘ
+POSE: sitting sleepily hugging the book, a small battery icon above the head showing one red bar, droopy ears, cute tired smile.
+VÀO (1 s): the battery above the head drains from green to one red bar, the fox yawns, ears droop.
+GIỮ (2 s): nods off slightly, the battery blinks red.
+BT "nạp Premium" (1.5 s): a small gold crown plugs into the battery, it fills up green, the fox pops up energized.
+
+E37 · CÀI ỨNG DỤNG — P2 · TĨNH
+POSE: holding a smartphone whose screen shows a small fox-face app icon, tapping it, happy.
+VÀO (1.5 s): taps the screen, the fox icon bounces as if added to the home screen, the fox smiles.
+
+E38 · TẠM BIỆT — P2 · TĨNH
+POSE: waving goodbye, half turned away, looking back over the shoulder with a warm smile.
+VÀO (1.5 s): waves, turns and walks a few steps away, looks back and waves once more.
+BT "xoá tài khoản" (1.5 s): same, ears slightly lowered, still smiling.
+
+E39 · GHI CHÚ (trợ lý AI trả lời dài, giải thích ngữ pháp, nhận xét cuối buổi) — P0 · ĐỦ BỘ
+POSE: holding a small cream notebook with a red cover (different from the HanNi book) and a pen, showing an open page to the viewer,
+thoughtful helpful smile.
+VÀO (0.5 s): pulls the small notebook and pen out of the sleeve.
+GIỮ (2 s): writes a few lines, nods, then holds the open page toward the viewer.
+RA (0.5 s): closes the notebook and tucks it under the arm.
+BT1 (1 s): flips to a fresh blank page (new conversation).
+BT2 (1.5 s): underlines one important line with the pen and taps it.
+
+E40 · ĐƯỢC KHEN (người học cảm ơn, chạm vào cáo nhiều lần) — P1 · NHẸ
+POSE: blushing cheeks, shy happy smile, one paw scratching the cheek, small hearts floating up.
+VÀO (1 s): cheeks turn pink, giggles shyly, tail wags fast, two small hearts float up.
+
+E41 · ĐÈN LỒNG (chuyển chế độ tối) — P2 · TĨNH
+POSE: holding a glowing red Chinese lantern with a gold tassel, warm light on the face, calm smile. Test on dark background #121720.
+
+E42 · CHĂM CHÚ (người học đang gõ trong khung chat) — P0 · ĐỦ BỘ
+POSE: leaning forward and looking down toward the bottom of the frame (where the text box is), ears perked up, attentive friendly face.
+VÀO (0.4 s): leans forward and looks down.
+GIỮ (1.5 s): small nods in rhythm as if reading what is being typed, ears twitch.
+RA (0.4 s): straightens up, ready to answer.
+BT1 (1.5 s): rests the chin on both paws, waiting patiently.
+BT2 (1.5 s): eyes move left to right following the typed text.
+
+==============================================================================================================================
+CÁO TRONG KHUNG CHAT TRỢ LÝ (mục 4.1 của brief) — app tự đổi emote theo lúc của cuộc chat
+==============================================================================================================================
+mở khung, chưa có tin        → E01 Chào → E00 Nghỉ          (ảnh đầu A1)
+người học đang gõ            → E42 Chăm chú
+vừa gửi, chưa có chữ         → E02 Suy nghĩ                 (A2)
+chữ đang hiện dần            → E10 Đọc mẫu, biến thể "giảng bài": add "holding the small notebook, explaining while talking"
+trả lời xong — câu ngắn      → E04 Vui mừng bản nhỏ: use "a happy nod and a smile, no jump" instead of the jump
+trả lời xong — dài / ghi chú → E39 Ghi chú
+có nút "Mở: <trang>"         → E25 Chỉ đường (pointing down toward a button below)
+hỏi về Hán Việt, mẹo nhớ     → E11 À ha!                    (A3)
+hết lượt AI hôm nay          → E36 Hết pin                  (A4)
+lỗi mạng / AI lỗi            → A4 Tiếc (bản to)
+người học cảm ơn             → E40 Được khen
+để yên hơn 30 giây           → E00 Nghỉ (biến thể ngó quanh, ngáp)
+
+==============================================================================================================================
+NÚT CÁO TRÒN MỞ TRỢ LÝ (mục 4.2 của brief) — N1–N7 · ĐỦ BỘ
+==============================================================================================================================
+Ảnh nút (dùng thay [B. KHUNG HÌNH]):
+Hanni the fox popping out of a round glossy red app button: a circular badge with a red gradient (#E14835 to #BD2B1F), a thin bright
+highlight along the top rim, a soft drop shadow below and a slightly recessed inner area like a round window. The fox's head and both
+front paws rest on the top edge of the circle, its ears and the top of its head break out above the rim by about 30% of the button
+height, the body hidden inside the circle, the tail tip peeking out on one side. Front view, centered, square 1:1, transparent-ready
+solid flat blue background #0047FF, readable at 56-64 px.
+N1 NGHỈ (lặp 4 s): blinks, ear twitches, gentle breathing; the tail tip peeks out occasionally.
+N2 LÓ LÊN CHÀO (1 lần 1.5 s): rises higher out of the circle, waves one paw, sinks back to the resting height.
+N3 ĐƯỢC CHẠM (1 lần 0.8 s): stretches up, smiles widely, ears shoot up.
+N4 THỤT XUỐNG (1 lần 0.4 s): ducks down into the circle until only the two ear tips show.
+N5 LÓ LẠI (1 lần 0.4 s): pops the head back up from the circle.
+N6 CÓ TIN MỚI (1 lần 0.8 s → lặp 1.5 s): holds up a small white chat bubble, a red notification dot pulses.
+N7 ĐANG TRẢ LỜI (lặp 1.6 s): three small cream dots appear one by one above the head and fade.
+
+A1–A4 · ẢNH ĐẦU (avatar 28–128 px) — P0 · ĐỦ BỘ
+Thay [B. KHUNG HÌNH] bằng: close-up bust portrait (head and shoulders with the Hanfu collar), centered, facing the viewer, square
+1:1, solid flat blue background #0047FF, very readable at tiny sizes (bold shapes, clear eyes).
+A1 VUI:        big friendly smile, eyes open.            GIỮ (3 s): blinks once, one ear twitches.
+A2 SUY NGHĨ:   eyes looking up-left, three small dots.    GIỮ (1.6 s): the dots appear one by one and fade.
+A3 NGẠC NHIÊN: eyes wide, small "oh" mouth, ears up.      GIỮ (3 s): blinks, ears twitch.
+A4 TIẾC:       ears slightly lowered, small pressed smile. GIỮ (3 s): blinks slowly.
+
+BẢNG NHÂN VẬT (làm đầu tiên để chốt hình)
+------------------------------------------
+[A. NHÂN VẬT GỐC] + character model sheet on a plain light grey background: front, three-quarter, side and back views of the full
+body in the same neutral standing pose, plus a row of six facial expressions (happy, thinking, surprised, a little sad, determined,
+sleepy), consistent proportions, clean turnaround, labels hidden.
