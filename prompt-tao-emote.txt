@@ -1,5 +1,40 @@
 PROMPT TẠO EMOTE CHO CÁO HANNI
 ==============================
+QUY ƯỚC TRIỂN KHAI HIỆN TẠI — 29/10/2026
+-----------------------------------------
+TẤT CẢ emote đang dùng trong dự án thống nhất 6 FRAME / VÒNG, không trộn 4 / 6 / 9 frame.
+Danh sách hiện triển khai: E00, E01, E02, E04, E05, E09, E10, E11, E16, E19, E39, E42.
+Sáu emote P0 cốt lõi: E00, E01, E02, E10, E39, E42. Sáu emote còn lại phục vụ các tình huống học tập quan trọng.
+QUY ƯỚC ĐANG DÙNG: prompts/drawn-cels.md. Bản rig một ảnh đã bị người dùng loại.
+Prompt bộ sáu hình: prompts/emotes-drawn-six-frame.json. Bảy dáng E00/E02/E04/E09/E16/E19/E42 đã thay theo prompts/art-revision-seven.json, sinh trực tiếp từ ảnh Hanni gốc.
+V10 chỉnh riêng E19/E42 và thêm cử động thỉnh thoảng cho nút tròn: prompts/emotes-and-launcher-v10.json. E19 soi trang sách bằng kính nhỏ; E42 ngồi chăm chú, nhìn về người học và gật nhẹ.
+V11 HIỆN HÀNH: E42 GIỮ DÁNG NGỒI theo lựa chọn người dùng, sửa nét mặt và giảm dao động, bỏ gật/lắc đầu. E19 chỉ quét kính ngang ngắn khoảng 10 px trên ảnh 512, không gật đầu. Hai emote dùng cùng tỉ lệ xuất qua sáu frame. Prompt đầy đủ đang dùng: prompts/active-assets.json; riêng hai bộ mới: prompts/reduced-motion-cels-v11.json.
+
+YÊU CẦU CHUYỂN ĐỘNG:
+- 6 hình là 6 bước của cùng một động tác, không phải 6 tranh minh họa rời và không lặp một ảnh để đủ số lượng.
+- MỖI FRAME LÀ MỘT ẢNH VẼ RIÊNG: không dùng một ảnh rồi uốn, xoay, kéo giãn hoặc điều khiển khớp bằng code để giả chuyển động.
+- Tay có cung chuyển động đọc được, mắt/miệng có thay đổi thật trong ảnh. Cùng dáng thân, đầu, chân và góc máy; tránh nhảy tỉ lệ hoặc trôi cả người.
+- Giữ nguyên tỉ lệ, góc máy, Hán phục, đạo cụ, vai trò từng tay và phía của đuôi trong toàn bộ vòng.
+- Frame 6 tiến gần tư thế frame 1. Bước 6 → 1 phải nhỏ tương đương các bước còn lại; không cắt từ pose cuối về pose nghỉ.
+- Khóa dáng thân và vạch chân, không đổi kích thước theo từng frame. E04 vỗ hai tay trước ngực, không sách; E19 cầm kính ngoài mặt; E16 sách nhỏ ngang eo, mắt nhìn xuống trang.
+- Phát đúng sáu ảnh theo nhịp phù hợp động tác; nháy mắt ngắn, tư thế nghỉ giữ lâu hơn. Runtime chỉ đổi ô ảnh, không shader/optical flow/crossfade hay cộng chuyển động phụ.
+- Mỗi frame: đúng HAI tay, HAI bàn chân, MỘT đuôi. Đạo cụ không cần tay thứ ba để đỡ.
+- E39: CHỈ một tay giữ MỘT sổ, tay kia cầm bút. KHÔNG cầm thêm sách HanNi, KHÔNG kẹp sách dưới tay.
+- Kính lúp E19 luôn cùng tay, ở phía trang sách dưới mặt; không xuyên qua mắt/mũi. Đuôi E00 không đổi sang bên đối diện.
+
+VAI TRÒ TRONG SẢN PHẨM:
+- Emote là phản ứng chính ở trợ lý AI và bài học, mỗi emote có tình huống sử dụng rõ ràng.
+- Avatar chỉ cần một ảnh đầu cáo tĩnh cạnh tin nhắn, không cần thư viện biểu cảm riêng trong demo.
+- Nút trợ lý có ba cử động ngắn, mỗi cử động 6 ảnh riêng: nháy mắt, vẫy tay, ló lên rồi hạ xuống. Phát từng đoạn một lần, nghỉ 12–20 giây giữa các đoạn; không lặp liên tục hoặc uốn ảnh bằng code. Vòng đỏ được căn cố định.
+- N1–N7, A1–A4 và các clip VÀO/RA/BT bên dưới là tài liệu mở rộng, không phải yêu cầu làm thêm bộ biểu cảm trong bản demo này.
+
+KHUNG SHEET 6 FRAME:
+Canvas tổng VUÔNG 1:1, chia CHÍNH XÁC 3 cột × 2 hàng (mỗi ô portrait), đọc trái → phải rồi xuống hàng.
+RIÊNG NÚT TRÒN: canvas vuông 2 cột × 3 hàng, đọc trái → phải rồi xuống; chừa khoảng trong suốt lớn quanh từng nút để không cắt vòng đỏ/tai/tay.
+Nền TRONG SUỐT thật, không phông đỏ/nâu, không sàn/bóng, không đường kẻ, nhãn, số thứ tự hoặc chữ ngoài HanNi và 汉.
+Chừa biên để tai, tay, đuôi và đạo cụ nằm trọn trong từng ô. Không tạo canvas ngang 3:2 cho pipeline hiện tại.
+Trước khi bàn giao: xem đủ 6 frame trên nền sáng/tối; đếm tay/chân/đuôi; kiểm tra thứ tự chuyển động và bước nối 6 → 1.
+
 Đọc kèm: 00-Brief-linh-vat-Hanni.pdf (mục 4 = cáo trong trợ lý AI, mục 5 = danh sách emote, mục 8 = thông số bàn giao).
 Prompt viết bằng tiếng Anh vì công cụ tạo ảnh/video hiểu tiếng Anh tốt nhất. Luôn đính kèm ảnh tham chiếu nhan-vat/cao-hanni-goc.png.
 
@@ -12,6 +47,12 @@ Làm trước: trợ lý AI (E02, E10, E39, E42, E00, E01, A1–A4, nút N1–N7
 
 CÁCH DÙNG
 ---------
+Bản đang chạy: đọc prompts/drawn-cels.md, prompts/active-assets.json và assets/manifest-v11.json.
+Sheet emote mới ở assets/emotes/sheets/v11/, 10 sheet không đổi giữ từ v10. Sheet nút ở assets/assistant-button/sheets/v10/.
+Chạy python tools/build-six.py --bank v11 và python tools/build-launcher.py để xuất sáu PNG/WebP/atlas 512/256. Chỉ tách/căn/resize đồng tỉ lệ; không chỉnh biến dạng bộ phận cơ thể.
+Bản v7 (rig một ảnh) đã bị loại; không nạp code hoặc manifest v7 trong demo bàn giao.
+Mở demo, xem từng frame và phát thường/chậm; kiểm tra chân, chiều tay/đuôi, props, nét mặt và vòng 6 → 1.
+Quy trình ảnh → video bên dưới chỉ dùng khi có yêu cầu làm bản video riêng; không phải cách phát 6 cel của demo.
 Bước 1 — Ảnh tư thế (Midjourney / ChatGPT / Gemini / Ideogram…):
     [A. NHÂN VẬT GỐC] + [B. KHUNG HÌNH] + [POSE của emote]   (+ [C. CẤM] nếu công cụ có ô negative prompt)
     Midjourney: thêm --cref <link ảnh gốc> --cw 100 --ar 1:1 (hoặc --oref ở bản mới). ChatGPT/Gemini: đính kèm ảnh gốc và ghi
@@ -292,8 +333,8 @@ VÀO (1.5 s): waves, turns and walks a few steps away, looks back and waves once
 BT "xoá tài khoản" (1.5 s): same, ears slightly lowered, still smiling.
 
 E39 · GHI CHÚ (trợ lý AI trả lời dài, giải thích ngữ pháp, nhận xét cuối buổi) — P0 · ĐỦ BỘ
-POSE: holding a small cream notebook with a red cover (different from the HanNi book) and a pen, showing an open page to the viewer,
-thoughtful helpful smile.
+POSE: exactly two arms and two paws: one paw supports ONE open cream notebook with a red cover, the other paw holds ONE gold pen
+above that notebook. No second book, no HanNi book held or tucked under an arm. Thoughtful helpful smile; clearly connected sleeves.
 VÀO (0.5 s): pulls the small notebook and pen out of the sleeve.
 GIỮ (2 s): writes a few lines, nods, then holds the open page toward the viewer.
 RA (0.5 s): closes the notebook and tucks it under the arm.

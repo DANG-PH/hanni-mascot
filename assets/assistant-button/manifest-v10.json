@@ -1,0 +1,161 @@
+{
+  "version": "v10-occasional-gestures",
+  "poster": "assets/assistant-button/v10/png/hanni-fox-blink@256.png",
+  "initial_delay_ms": 5000,
+  "idle_interval_ms": [
+    12000,
+    20000
+  ],
+  "clips": {
+    "blink": {
+      "id": "blink",
+      "duration": 0.77,
+      "durations_ms": [
+        180,
+        70,
+        90,
+        70,
+        160,
+        200
+      ],
+      "frames": 6,
+      "loop": false,
+      "atlases": {
+        "512": {
+          "src": "assets/assistant-button/v10/atlases/hanni-fox-blink@512.webp?v=431d073072",
+          "columns": 6,
+          "size": 512,
+          "count": 6
+        },
+        "256": {
+          "src": "assets/assistant-button/v10/atlases/hanni-fox-blink@256.webp?v=6d2bd0585b",
+          "columns": 6,
+          "size": 256,
+          "count": 6
+        }
+      },
+      "webp": {
+        "512": "assets/assistant-button/v10/webp/hanni-fox-blink-giu@512.webp",
+        "256": "assets/assistant-button/v10/webp/hanni-fox-blink-giu@256.webp"
+      },
+      "png_frames": {
+        "512": [
+          "assets/assistant-button/v10/frames/blink@512/frame-01.png",
+          "assets/assistant-button/v10/frames/blink@512/frame-02.png",
+          "assets/assistant-button/v10/frames/blink@512/frame-03.png",
+          "assets/assistant-button/v10/frames/blink@512/frame-04.png",
+          "assets/assistant-button/v10/frames/blink@512/frame-05.png",
+          "assets/assistant-button/v10/frames/blink@512/frame-06.png"
+        ],
+        "256": [
+          "assets/assistant-button/v10/frames/blink@256/frame-01.png",
+          "assets/assistant-button/v10/frames/blink@256/frame-02.png",
+          "assets/assistant-button/v10/frames/blink@256/frame-03.png",
+          "assets/assistant-button/v10/frames/blink@256/frame-04.png",
+          "assets/assistant-button/v10/frames/blink@256/frame-05.png",
+          "assets/assistant-button/v10/frames/blink@256/frame-06.png"
+        ]
+      }
+    },
+    "wave": {
+      "id": "wave",
+      "duration": 0.9,
+      "durations_ms": [
+        160,
+        120,
+        160,
+        160,
+        120,
+        180
+      ],
+      "frames": 6,
+      "loop": false,
+      "atlases": {
+        "512": {
+          "src": "assets/assistant-button/v10/atlases/hanni-fox-wave@512.webp?v=0ca856909e",
+          "columns": 6,
+          "size": 512,
+          "count": 6
+        },
+        "256": {
+          "src": "assets/assistant-button/v10/atlases/hanni-fox-wave@256.webp?v=0e5e5a4cb8",
+          "columns": 6,
+          "size": 256,
+          "count": 6
+        }
+      },
+      "webp": {
+        "512": "assets/assistant-button/v10/webp/hanni-fox-wave-giu@512.webp",
+        "256": "assets/assistant-button/v10/webp/hanni-fox-wave-giu@256.webp"
+      },
+      "png_frames": {
+        "512": [
+          "assets/assistant-button/v10/frames/wave@512/frame-01.png",
+          "assets/assistant-button/v10/frames/wave@512/frame-02.png",
+          "assets/assistant-button/v10/frames/wave@512/frame-03.png",
+          "assets/assistant-button/v10/frames/wave@512/frame-04.png",
+          "assets/assistant-button/v10/frames/wave@512/frame-05.png",
+          "assets/assistant-button/v10/frames/wave@512/frame-06.png"
+        ],
+        "256": [
+          "assets/assistant-button/v10/frames/wave@256/frame-01.png",
+          "assets/assistant-button/v10/frames/wave@256/frame-02.png",
+          "assets/assistant-button/v10/frames/wave@256/frame-03.png",
+          "assets/assistant-button/v10/frames/wave@256/frame-04.png",
+          "assets/assistant-button/v10/frames/wave@256/frame-05.png",
+          "assets/assistant-button/v10/frames/wave@256/frame-06.png"
+        ]
+      }
+    },
+    "peek": {
+      "id": "peek",
+      "duration": 0.96,
+      "durations_ms": [
+        160,
+        140,
+        180,
+        140,
+        140,
+        200
+      ],
+      "frames": 6,
+      "loop": false,
+      "atlases": {
+        "512": {
+          "src": "assets/assistant-button/v10/atlases/hanni-fox-peek@512.webp?v=314900d180",
+          "columns": 6,
+          "size": 512,
+          "count": 6
+        },
+        "256": {
+          "src": "assets/assistant-button/v10/atlases/hanni-fox-peek@256.webp?v=785456dbe4",
+          "columns": 6,
+          "size": 256,
+          "count": 6
+        }
+      },
+      "webp": {
+        "512": "assets/assistant-button/v10/webp/hanni-fox-peek-giu@512.webp",
+        "256": "assets/assistant-button/v10/webp/hanni-fox-peek-giu@256.webp"
+      },
+      "png_frames": {
+        "512": [
+          "assets/assistant-button/v10/frames/peek@512/frame-01.png",
+          "assets/assistant-button/v10/frames/peek@512/frame-02.png",
+          "assets/assistant-button/v10/frames/peek@512/frame-03.png",
+          "assets/assistant-button/v10/frames/peek@512/frame-04.png",
+          "assets/assistant-button/v10/frames/peek@512/frame-05.png",
+          "assets/assistant-button/v10/frames/peek@512/frame-06.png"
+        ],
+        "256": [
+          "assets/assistant-button/v10/frames/peek@256/frame-01.png",
+          "assets/assistant-button/v10/frames/peek@256/frame-02.png",
+          "assets/assistant-button/v10/frames/peek@256/frame-03.png",
+          "assets/assistant-button/v10/frames/peek@256/frame-04.png",
+          "assets/assistant-button/v10/frames/peek@256/frame-05.png",
+          "assets/assistant-button/v10/frames/peek@256/frame-06.png"
+        ]
+      }
+    }
+  }
+}

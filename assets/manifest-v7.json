@@ -1,0 +1,1285 @@
+{
+  "version": "stable-joint-v1",
+  "frame_count": 6,
+  "playback": "cyclic-joints",
+  "emotes": {
+    "e00-nghi": {
+      "code": "E00",
+      "name": "Nghỉ",
+      "category": "ai",
+      "trigger": "Trợ lý đang mở và chờ bạn đặt câu hỏi.",
+      "action": "Thân và chân đứng yên; đầu nghiêng rất nhẹ, chóp đuôi chuyển động chậm.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e00-nghi@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 2.4,
+          "durations_ms": [
+            400,
+            400,
+            400,
+            400,
+            400,
+            400
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e00-nghi@256.webp?v=2a5b4ae37f",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e00-nghi@512.webp?v=526a385ed7",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e00-nghi-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e00-nghi-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e00-nghi@512.png?v=bf86d91f12",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.004363323129985824,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    },
+    "e01-chao": {
+      "code": "E01",
+      "name": "Chào",
+      "category": "ai",
+      "trigger": "Lần đầu mở khung trợ lý hoặc bắt đầu buổi học.",
+      "action": "Tay vẫy theo một cung nhỏ, đầu đáp nhẹ; thân và chân giữ nguyên.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e01-chao@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 1.44,
+          "durations_ms": [
+            240,
+            240,
+            240,
+            240,
+            240,
+            240
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e01-chao@256.webp?v=49f53c0df5",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e01-chao@512.webp?v=721f0e2ca7",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e01-chao-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e01-chao-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e01-chao@512.png?v=3b0e809ccf",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.008726646259971648,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  405,
+                  255
+                ],
+                "radius": [
+                  68,
+                  80
+                ],
+                "pivot": [
+                  351,
+                  325
+                ],
+                "motion": [
+                  0.06981317007977318,
+                  1,
+                  1.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    },
+    "e02-suy-nghi": {
+      "code": "E02",
+      "name": "Suy nghĩ",
+      "category": "ai",
+      "trigger": "Bạn vừa gửi câu hỏi, AI chưa có câu trả lời.",
+      "action": "Nghiêng đầu suy nghĩ và chạm cằm nhẹ, không lắc cả người.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e02-suy-nghi@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 1.92,
+          "durations_ms": [
+            320,
+            320,
+            320,
+            320,
+            320,
+            320
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e02-suy-nghi@256.webp?v=487827b234",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e02-suy-nghi@512.webp?v=1875d1a776",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e02-suy-nghi-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e02-suy-nghi-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e02-suy-nghi@512.png?v=f769178858",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.013962634015954637,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  335,
+                  287
+                ],
+                "radius": [
+                  40,
+                  48
+                ],
+                "pivot": [
+                  329,
+                  327
+                ],
+                "motion": [
+                  0.03490658503988659,
+                  0,
+                  0.8,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    },
+    "e04-vui-mung": {
+      "code": "E04",
+      "name": "Vui mừng",
+      "category": "learn",
+      "trigger": "Bạn trả lời đúng hoặc hoàn thành bài học.",
+      "action": "Giơ tay ăn mừng theo nhịp, đầu đáp nhẹ và đuôi nhúc nhích; không nhảy cả thân.",
+      "hop": false,
+      "poster": "assets/emotes/v7/png/hanni-fox-e04-vui-mung@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 1.32,
+          "durations_ms": [
+            220,
+            220,
+            220,
+            220,
+            220,
+            220
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e04-vui-mung@256.webp?v=df57c079ca",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e04-vui-mung@512.webp?v=dc1db9d975",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e04-vui-mung-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e04-vui-mung-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e04-vui-mung@512.png?v=11415db92c",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.010471975511965976,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  397,
+                  261
+                ],
+                "radius": [
+                  68,
+                  82
+                ],
+                "pivot": [
+                  345,
+                  329
+                ],
+                "motion": [
+                  0.06981317007977318,
+                  0,
+                  2,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "e05-co-len": {
+      "code": "E05",
+      "name": "Cố lên!",
+      "category": "learn",
+      "trigger": "Bạn làm sai một câu hoặc muốn thử lại.",
+      "action": "Nắm tay nhích lên động viên, gật nhẹ; áo và chân ổn định.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e05-co-len@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 1.68,
+          "durations_ms": [
+            280,
+            280,
+            280,
+            280,
+            280,
+            280
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e05-co-len@256.webp?v=5625d1ebc8",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e05-co-len@512.webp?v=c7e5e8b317",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e05-co-len-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e05-co-len-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e05-co-len@512.png?v=41606d2353",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.010471975511965976,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  351,
+                  294
+                ],
+                "radius": [
+                  49,
+                  62
+                ],
+                "pivot": [
+                  322,
+                  339
+                ],
+                "motion": [
+                  0.05235987755982988,
+                  0,
+                  1.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    },
+    "e09-lang-nghe": {
+      "code": "E09",
+      "name": "Lắng nghe",
+      "category": "learn",
+      "trigger": "Bạn bật micro để luyện nói hoặc luyện phát âm.",
+      "action": "Đầu nghiêng nghe, tay bên tai chuyển động nhỏ và đều.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e09-lang-nghe@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 2.16,
+          "durations_ms": [
+            360,
+            360,
+            360,
+            360,
+            360,
+            360
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e09-lang-nghe@256.webp?v=04e3ca4b96",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e09-lang-nghe@512.webp?v=5847b4151f",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e09-lang-nghe-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e09-lang-nghe-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e09-lang-nghe@512.png?v=b20878d04d",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.013962634015954637,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  368,
+                  216
+                ],
+                "radius": [
+                  45,
+                  53
+                ],
+                "pivot": [
+                  340,
+                  282
+                ],
+                "motion": [
+                  0.03490658503988659,
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    },
+    "e10-doc-mau": {
+      "code": "E10",
+      "name": "Giảng bài",
+      "category": "ai",
+      "trigger": "Trợ lý đang đọc mẫu hoặc giải thích đáp án.",
+      "action": "Tay giảng bài theo cung nhỏ, miệng cử động nhẹ, thân đứng yên.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e10-doc-mau@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 1.44,
+          "durations_ms": [
+            240,
+            240,
+            240,
+            240,
+            240,
+            240
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e10-doc-mau@256.webp?v=d191d57d31",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e10-doc-mau@512.webp?v=4c9e66a462",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e10-doc-mau-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e10-doc-mau-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e10-doc-mau@512.png?v=9a2e75a389",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.007853981633974483,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  397,
+                  302
+                ],
+                "radius": [
+                  67,
+                  61
+                ],
+                "pivot": [
+                  350,
+                  343
+                ],
+                "motion": [
+                  0.05235987755982988,
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              },
+              {
+                "center": [
+                  291,
+                  239
+                ],
+                "radius": [
+                  29,
+                  19
+                ],
+                "pivot": [
+                  291,
+                  252
+                ],
+                "motion": [
+                  0,
+                  0,
+                  1.6,
+                  0.5
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    },
+    "e11-a-ha": {
+      "code": "E11",
+      "name": "À ha!",
+      "category": "learn",
+      "trigger": "Hanni chỉ ra mẹo nhớ hoặc giải thích âm Hán Việt.",
+      "action": "Ngón tay chỉ lên nhích nhẹ, đầu gật đồng ý và đuôi theo sau.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e11-a-ha@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 1.68,
+          "durations_ms": [
+            280,
+            280,
+            280,
+            280,
+            280,
+            280
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e11-a-ha@256.webp?v=1925400b5a",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e11-a-ha@512.webp?v=62d611e00c",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e11-a-ha-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e11-a-ha-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e11-a-ha@512.png?v=ee19623ba3",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.010471975511965976,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  374,
+                  282
+                ],
+                "radius": [
+                  48,
+                  61
+                ],
+                "pivot": [
+                  340,
+                  330
+                ],
+                "motion": [
+                  0.05235987755982988,
+                  0,
+                  1.2,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    },
+    "e16-doc-sach": {
+      "code": "E16",
+      "name": "Đọc sách",
+      "category": "learn",
+      "trigger": "Bạn xem bài đọc hoặc đọc một ví dụ tiếng Trung.",
+      "action": "Đầu đọc theo nhịp chậm, góc sách dịch rất nhẹ; thân và chân giữ nguyên.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e16-doc-sach@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 2.4,
+          "durations_ms": [
+            400,
+            400,
+            400,
+            400,
+            400,
+            400
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e16-doc-sach@256.webp?v=561eb8920f",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e16-doc-sach@512.webp?v=8fb099ccfa",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e16-doc-sach-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e16-doc-sach-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e16-doc-sach@512.png?v=baa84a1f3f",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.011344640137963142,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  319,
+                  320
+                ],
+                "radius": [
+                  51,
+                  38
+                ],
+                "pivot": [
+                  292,
+                  351
+                ],
+                "motion": [
+                  0.010471975511965976,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    },
+    "e19-tim-kiem": {
+      "code": "E19",
+      "name": "Tìm kiếm",
+      "category": "learn",
+      "trigger": "Đang tra từ hoặc chưa tìm thấy nội dung phù hợp.",
+      "action": "Kính lúp đi một vòng nhỏ trước cùng một mắt, không đổi tay.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e19-tim-kiem@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 1.92,
+          "durations_ms": [
+            320,
+            320,
+            320,
+            320,
+            320,
+            320
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e19-tim-kiem@256.webp?v=a31a6d7f7f",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e19-tim-kiem@512.webp?v=8f7129931e",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e19-tim-kiem-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e19-tim-kiem-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e19-tim-kiem@512.png?v=0fa9bd906e",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.009599310885968814,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  346,
+                  245
+                ],
+                "radius": [
+                  45,
+                  73
+                ],
+                "pivot": [
+                  328,
+                  315
+                ],
+                "motion": [
+                  0.03490658503988659,
+                  1,
+                  1,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    },
+    "e39-ghi-chu": {
+      "code": "E39",
+      "name": "Ghi chú",
+      "category": "ai",
+      "trigger": "Trợ lý ghi lại quy tắc ngữ pháp hoặc nhận xét cuối buổi.",
+      "action": "Một tay giữ sổ cố định, tay cầm bút viết theo nhịp nhỏ; luôn đủ hai tay.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e39-ghi-chu@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 1.8,
+          "durations_ms": [
+            300,
+            300,
+            300,
+            300,
+            300,
+            300
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e39-ghi-chu@256.webp?v=fdc6a0fbf0",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e39-ghi-chu@512.webp?v=b53b6b6366",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e39-ghi-chu-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e39-ghi-chu-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e39-ghi-chu@512.png?v=6093285989",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.007853981633974483,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  218,
+                  289
+                ],
+                "radius": [
+                  39,
+                  54
+                ],
+                "pivot": [
+                  233,
+                  326
+                ],
+                "motion": [
+                  0.05235987755982988,
+                  1,
+                  0.8,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    },
+    "e42-cham-chu": {
+      "code": "E42",
+      "name": "Chăm chú",
+      "category": "ai",
+      "trigger": "Bạn đang gõ câu hỏi trong ô chat.",
+      "action": "Đầu cúi đáp rất nhẹ khi đọc câu hỏi; sách, thân và chân ổn định.",
+      "poster": "assets/emotes/v7/png/hanni-fox-e42-cham-chu@256.png",
+      "clips": [
+        {
+          "id": "giu",
+          "duration": 2.4,
+          "durations_ms": [
+            400,
+            400,
+            400,
+            400,
+            400,
+            400
+          ],
+          "frames": 6,
+          "loop": true,
+          "atlases": {
+            "256": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e42-cham-chu@256.webp?v=ddd03d21fb",
+              "columns": 6,
+              "size": 256,
+              "count": 6
+            },
+            "512": {
+              "src": "assets/emotes/v7/atlases/hanni-fox-e42-cham-chu@512.webp?v=7cafb903a6",
+              "columns": 6,
+              "size": 512,
+              "count": 6
+            }
+          },
+          "webp": {
+            "256": "assets/emotes/v7/webp/hanni-fox-e42-cham-chu-giu@256.webp",
+            "512": "assets/emotes/v7/webp/hanni-fox-e42-cham-chu-giu@512.webp"
+          },
+          "rig": {
+            "base": "assets/emotes/v7/base/hanni-fox-e42-cham-chu@512.png?v=d0a8502f10",
+            "regions": [
+              {
+                "center": [
+                  256,
+                  172
+                ],
+                "radius": [
+                  148,
+                  142
+                ],
+                "pivot": [
+                  256,
+                  278
+                ],
+                "motion": [
+                  0.009599310885968814,
+                  0,
+                  0.5,
+                  0
+                ]
+              },
+              {
+                "center": [
+                  149,
+                  354
+                ],
+                "radius": [
+                  77,
+                  91
+                ],
+                "pivot": [
+                  207,
+                  404
+                ],
+                "motion": [
+                  0.02617993877991494,
+                  0.5,
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "hop": false
+    }
+  },
+  "avatar": "nhan-vat/mat-cao-logo.png",
+  "launcher": "assets/assistant-button/png/hanni-fox-n1-nghi@256.png"
+}

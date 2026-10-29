@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#c71e1a" />
+    <title>Hanni Mascot — Emote Lab</title>
+    <link rel="icon" href="nhan-vat/icon-app-512.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=launcher-11" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Hanni Emote Lab">
+          <img src="nhan-vat/mat-cao-logo.png" alt="" />
+          <span><strong>HanNi</strong><small>Emote lab</small></span>
+        </a>
+        <div class="top-actions">
+          <button class="icon-button" id="themeButton" type="button" aria-label="Đổi nền">◐</button>
+          <button class="primary-button" id="playFlowButton" type="button">▶ Chạy luồng chat</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-copy">
+          <span class="eyebrow">HANNI · BẠN ĐỒNG HÀNH HỌC TIẾNG TRUNG</span>
+          <h1>Mỗi trạng thái,<br /><em>một Hanni thật sống động.</em></h1>
+          <p>Hanni chào bạn, suy nghĩ cùng bạn, ăn mừng khi bạn làm đúng và động viên khi cần thử lại. Chọn một emote để xem chuyển động và tình huống sử dụng trong bài học.</p>
+          <div class="stats" aria-label="Thống kê bộ asset">
+            <div><strong id="totalEmotes">12</strong><span>emote</span></div>
+            <div><strong>6</strong><span>frame / emote</span></div>
+            <div><strong>2×</strong><span>512 + 256 px</span></div>
+          </div>
+        </section>
+
+        <section class="lab-grid">
+          <aside class="catalogue panel">
+            <div class="panel-heading">
+              <div><span class="section-kicker">THƯ VIỆN</span><h2>Chọn biểu cảm</h2></div>
+              <span class="count-badge" id="catalogueCount">12</span>
+            </div>
+            <div class="filter-row" role="tablist" aria-label="Lọc asset">
+              <button class="filter active" data-filter="all" type="button">Tất cả</button>
+              <button class="filter" data-filter="ai" type="button">Trợ lý AI</button>
+              <button class="filter" data-filter="learn" type="button">Học tập</button>
+            </div>
+            <div class="asset-list" id="assetList"></div>
+          </aside>
+
+          <section class="stage panel" aria-live="polite">
+            <div class="stage-toolbar">
+              <span class="live-pill"><i></i> LIVE PREVIEW</span>
+              <div class="surface-switcher" aria-label="Nền xem trước">
+                <button class="surface active" data-surface="light" type="button" aria-label="Nền sáng"></button>
+                <button class="surface" data-surface="dark" type="button" aria-label="Nền tối"></button>
+                <button class="surface" data-surface="brand" type="button" aria-label="Nền đỏ"></button>
+                <button class="surface" data-surface="checker" type="button" aria-label="Nền caro"></button>
+              </div>
+            </div>
+            <div class="preview light" id="preview">
+              <div class="motion-rings" aria-hidden="true"></div>
+              <canvas id="mascotPreview" width="512" height="512" role="img" aria-label="Hanni đang nghỉ"></canvas>
+              <div class="preview-label"><span id="previewCode">E00</span><strong id="previewName">Nghỉ</strong></div>
+            </div>
+            <div class="timeline">
+              <button class="play-button" id="playButton" type="button" aria-label="Phát lại">↻</button>
+              <div class="timeline-main">
+                <div class="timeline-meta"><strong id="clipName">Đang tải…</strong><span id="frameLabel">6 frame</span></div>
+                <input class="frame-scrubber" id="frameScrubber" type="range" min="0" max="1000" value="0" aria-label="Xem từng frame" />
+              </div>
+            </div>
+            <div class="frame-strip" id="frameStrip" aria-label="Sáu frame của emote"></div>
+            <div class="playback-controls">
+              <button class="clip-tab" id="pauseButton" type="button">Tạm dừng</button>
+              <span class="cel-mode">6 ảnh vẽ riêng · 1 → 6 → 1</span>
+              <label>Tốc độ <select id="speedSelect" aria-label="Tốc độ phát"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option></select></label>
+            </div>
+            <div class="emote-usage"><span class="section-kicker">KHI NÀO DÙNG?</span><p id="usageDescription"></p><small id="motionDescription"></small></div>
+          </section>
+
+          <aside class="chat-demo panel">
+            <div class="panel-heading chat-heading">
+              <div><span class="section-kicker">MÔ PHỎNG</span><h2>Trợ lý Hanni</h2></div>
+              <span class="status-dot">Online</span>
+            </div>
+            <div class="chat-stage" id="chatStage">
+              <div class="chat-mascot-wrap"><canvas id="chatMascot" width="256" height="256" role="img" aria-label="Hanni trong trợ lý AI"></canvas><span id="chatState">E00 · Nghỉ</span></div>
+              <div class="messages" id="messages">
+                <div class="message assistant"><img id="chatAvatar" class="chat-avatar" alt="Hanni" /><span id="chatResponse">你好! Mình là Hanni. Hôm nay bạn muốn luyện phần nào?</span></div>
+                <div class="message user">Giải thích giúp mình chữ 学 nhé.</div>
+                <div class="typing" id="typing"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <div class="scenario-buttons" id="scenarioButtons" aria-label="Thử tình huống trong dự án"></div>
+            <div class="composer"><span>Nhập câu hỏi...</span><button type="button" id="sendButton">➤</button></div>
+            <div class="launcher-preview"><span id="launcherActivity">Nút cáo thỉnh thoảng chào bạn</span><button type="button" id="previewLauncherButton" disabled>Thử cử động nút</button></div>
+          </aside>
+        </section>
+
+        <section class="delivery-strip">
+          <div><span>EMOTE</span><strong>Phản ứng theo tình huống</strong></div>
+          <div><span>VÒNG LẶP</span><strong>6 bước chuyển động</strong></div>
+          <div><span>ẢNH ĐẠI DIỆN</span><strong>Một ảnh tĩnh cạnh tin nhắn</strong></div>
+          <div><span>NÚT TRỢ LÝ</span><strong>Một nút để mở chat</strong></div>
+        </section>
+      </main>
+
+      <button class="assistant-launcher" id="assistantLauncher" type="button" aria-label="Mở trợ lý Hanni">
+        <img id="launcherImage" alt="" />
+        <canvas id="launcherCanvas" width="256" height="256" aria-hidden="true" hidden></canvas>
+        <span class="notification-dot" id="notificationDot"></span>
+      </button>
+    </div>
+    <script src="mascot-player.js?v=launcher-11"></script>
+    <script src="launcher-idle.js?v=occasional-10b"></script>
+    <script src="emote-demo.js?v=launcher-11"></script>
+  </body>
+</html>

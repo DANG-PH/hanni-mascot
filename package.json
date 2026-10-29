@@ -1,0 +1,11 @@
+{
+  "name": "hanni-mascot-demo",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:emotes && npm run build:launcher",
+    "build:emotes": "python3 tools/build-six.py --bank v11",
+    "build:launcher": "python3 tools/build-launcher.py",
+    "test": "node tools/check-player.cjs && node tools/check-launcher.cjs"
+  },
+  "dependencies": { "sharp": "0.35.5" }
+}

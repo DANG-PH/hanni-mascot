@@ -1,0 +1,176 @@
+{
+  "format": "4-frame-loop",
+  "cycles": {
+    "e00-nghi": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        3.938,
+        4.7,
+        4.7,
+        3.938
+      ],
+      "baseline_range_px": 0
+    },
+    "e01-chao": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        2.542,
+        5.158,
+        5.158,
+        2.542
+      ],
+      "baseline_range_px": 1
+    },
+    "e02-suy-nghi": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        2.738,
+        4.007,
+        4.007,
+        2.738
+      ],
+      "baseline_range_px": 1
+    },
+    "e10-doc-mau": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        1.42,
+        2.422,
+        2.422,
+        1.42
+      ],
+      "baseline_range_px": 0
+    },
+    "e39-ghi-chu": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        4.797,
+        4.797,
+        4.797,
+        4.797
+      ],
+      "baseline_range_px": 0
+    },
+    "e42-cham-chu": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        7.554,
+        4.996,
+        4.996,
+        7.554
+      ],
+      "baseline_range_px": 0
+    },
+    "a1-vui": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        14.983,
+        14.983,
+        14.983,
+        14.983
+      ],
+      "baseline_range_px": 0
+    },
+    "a2-suy-nghi": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        7.514,
+        7.514,
+        7.514,
+        7.514
+      ],
+      "baseline_range_px": 0
+    },
+    "a3-ngac-nhien": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        10.627,
+        10.627,
+        10.627,
+        10.627
+      ],
+      "baseline_range_px": 0
+    },
+    "a4-tiec": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        10.115,
+        10.115,
+        10.115,
+        10.115
+      ],
+      "baseline_range_px": 0
+    },
+    "n1-nghi": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        0.183,
+        0.183,
+        0.183,
+        0.183
+      ],
+      "baseline_range_px": 0
+    },
+    "n2-lo-len-chao": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        0.783,
+        0.783,
+        0.799,
+        0.799
+      ],
+      "baseline_range_px": 0
+    },
+    "n3-duoc-cham": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        0.481,
+        0.481,
+        0.485,
+        0.485
+      ],
+      "baseline_range_px": 0
+    },
+    "n4-thut-xuong": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        0.556,
+        0.548,
+        0.548,
+        0.556
+      ],
+      "baseline_range_px": 0
+    },
+    "n5-lo-lai": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        0.556,
+        0.548,
+        0.548,
+        0.556
+      ],
+      "baseline_range_px": 0
+    },
+    "n6-co-tin-moi": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        0.478,
+        0.478,
+        0.451,
+        0.451
+      ],
+      "baseline_range_px": 0
+    },
+    "n7-dang-tra-loi": {
+      "png_frames": 4,
+      "steps_1_2_3_4_1": [
+        0.42,
+        0.425,
+        0.423,
+        0.42
+      ],
+      "baseline_range_px": 0
+    }
+  },
+  "errors": []
+}

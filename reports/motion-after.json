@@ -1,0 +1,352 @@
+{
+  "fps": 24,
+  "clips": {
+    "e00-nghi/giu": {
+      "frames": 72,
+      "mean_step": 0.0997,
+      "largest_step": 0.2769,
+      "loop_seam_max": 0.0
+    },
+    "e00-nghi/bt1": {
+      "frames": 72,
+      "mean_step": 0.0411,
+      "largest_step": 0.0629,
+      "loop_seam_max": 0.0
+    },
+    "e00-nghi/bt2": {
+      "frames": 48,
+      "mean_step": 0.1066,
+      "largest_step": 0.2079,
+      "loop_seam_max": 0.0
+    },
+    "e00-nghi/bt3": {
+      "frames": 72,
+      "mean_step": 0.0406,
+      "largest_step": 0.0785,
+      "loop_seam_max": 0.0
+    },
+    "e01-chao/vao": {
+      "frames": 12,
+      "mean_step": 3.9159,
+      "largest_step": 13.4346,
+      "loop_seam_max": 255.0
+    },
+    "e01-chao/giu": {
+      "frames": 48,
+      "mean_step": 0.148,
+      "largest_step": 0.2782,
+      "loop_seam_max": 0.0
+    },
+    "e01-chao/ra": {
+      "frames": 12,
+      "mean_step": 3.9159,
+      "largest_step": 13.4346,
+      "loop_seam_max": 255.0
+    },
+    "e01-chao/bt1": {
+      "frames": 48,
+      "mean_step": 2.0554,
+      "largest_step": 11.3332,
+      "loop_seam_max": 0.0
+    },
+    "e01-chao/bt2": {
+      "frames": 48,
+      "mean_step": 2.0554,
+      "largest_step": 11.3332,
+      "loop_seam_max": 0.0
+    },
+    "e01-chao/bt3": {
+      "frames": 48,
+      "mean_step": 2.0554,
+      "largest_step": 11.3332,
+      "loop_seam_max": 0.0
+    },
+    "e02-suy-nghi/vao": {
+      "frames": 10,
+      "mean_step": 4.2732,
+      "largest_step": 15.0274,
+      "loop_seam_max": 255.0
+    },
+    "e02-suy-nghi/giu": {
+      "frames": 38,
+      "mean_step": 0.1109,
+      "largest_step": 0.1898,
+      "loop_seam_max": 0.0
+    },
+    "e02-suy-nghi/ra": {
+      "frames": 10,
+      "mean_step": 4.749,
+      "largest_step": 15.6616,
+      "loop_seam_max": 255.0
+    },
+    "e02-suy-nghi/bt1": {
+      "frames": 38,
+      "mean_step": 2.2532,
+      "largest_step": 12.8229,
+      "loop_seam_max": 0.0
+    },
+    "e02-suy-nghi/bt2": {
+      "frames": 48,
+      "mean_step": 1.8404,
+      "largest_step": 10.8441,
+      "loop_seam_max": 0.0
+    },
+    "e10-doc-mau/vao": {
+      "frames": 7,
+      "mean_step": 5.8382,
+      "largest_step": 14.7548,
+      "loop_seam_max": 255.0
+    },
+    "e10-doc-mau/giu": {
+      "frames": 24,
+      "mean_step": 0.4759,
+      "largest_step": 1.2273,
+      "loop_seam_max": 0.0
+    },
+    "e10-doc-mau/ra": {
+      "frames": 7,
+      "mean_step": 5.9506,
+      "largest_step": 14.7074,
+      "loop_seam_max": 255.0
+    },
+    "e10-doc-mau/bt1": {
+      "frames": 24,
+      "mean_step": 3.2616,
+      "largest_step": 15.1211,
+      "loop_seam_max": 0.0
+    },
+    "e10-doc-mau/bt2": {
+      "frames": 36,
+      "mean_step": 2.2884,
+      "largest_step": 11.164,
+      "loop_seam_max": 0.0
+    },
+    "e39-ghi-chu/vao": {
+      "frames": 12,
+      "mean_step": 7.2838,
+      "largest_step": 16.8583,
+      "loop_seam_max": 255.0
+    },
+    "e39-ghi-chu/giu": {
+      "frames": 48,
+      "mean_step": 1.9217,
+      "largest_step": 7.2027,
+      "loop_seam_max": 0.0
+    },
+    "e39-ghi-chu/ra": {
+      "frames": 12,
+      "mean_step": 6.3012,
+      "largest_step": 17.1217,
+      "loop_seam_max": 255.0
+    },
+    "e39-ghi-chu/bt1": {
+      "frames": 24,
+      "mean_step": 6.531,
+      "largest_step": 18.4051,
+      "loop_seam_max": 0.0
+    },
+    "e39-ghi-chu/bt2": {
+      "frames": 36,
+      "mean_step": 4.6948,
+      "largest_step": 15.026,
+      "loop_seam_max": 0.0
+    },
+    "e42-cham-chu/vao": {
+      "frames": 10,
+      "mean_step": 3.8484,
+      "largest_step": 12.5874,
+      "loop_seam_max": 255.0
+    },
+    "e42-cham-chu/giu": {
+      "frames": 36,
+      "mean_step": 0.4713,
+      "largest_step": 0.7312,
+      "loop_seam_max": 0.0
+    },
+    "e42-cham-chu/ra": {
+      "frames": 10,
+      "mean_step": 3.6101,
+      "largest_step": 9.2009,
+      "loop_seam_max": 255.0
+    },
+    "e42-cham-chu/bt1": {
+      "frames": 36,
+      "mean_step": 2.0199,
+      "largest_step": 6.4113,
+      "loop_seam_max": 0.0
+    },
+    "e42-cham-chu/bt2": {
+      "frames": 36,
+      "mean_step": 2.2012,
+      "largest_step": 9.3355,
+      "loop_seam_max": 0.0
+    }
+  },
+  "errors": [],
+  "oversize_webp": [
+    {
+      "path": "assets/avatars/webp/hanni-fox-a1-vui-giu@128.webp",
+      "kb": 245
+    },
+    {
+      "path": "assets/avatars/webp/hanni-fox-a4-tiec-giu@128.webp",
+      "kb": 227
+    },
+    {
+      "path": "assets/avatars/webp/hanni-fox-a3-ngac-nhien-giu@128.webp",
+      "kb": 275
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e01-chao-bt1@512.webp",
+      "kb": 469
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e02-suy-nghi-giu@256.webp",
+      "kb": 176
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e01-chao-bt3@256.webp",
+      "kb": 193
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e42-cham-chu-bt1@256.webp",
+      "kb": 203
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e10-doc-mau-bt2@512.webp",
+      "kb": 579
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e42-cham-chu-bt1@512.webp",
+      "kb": 495
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e00-nghi-bt3@256.webp",
+      "kb": 176
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e10-doc-mau-bt2@256.webp",
+      "kb": 232
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e39-ghi-chu-bt1@256.webp",
+      "kb": 164
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e02-suy-nghi-bt1@256.webp",
+      "kb": 210
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e00-nghi-giu@256.webp",
+      "kb": 203
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e42-cham-chu-giu@256.webp",
+      "kb": 152
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e39-ghi-chu-bt2@512.webp",
+      "kb": 547
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e42-cham-chu-bt2@512.webp",
+      "kb": 439
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e00-nghi-bt1@256.webp",
+      "kb": 206
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e10-doc-mau-bt1@256.webp",
+      "kb": 155
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e39-ghi-chu-bt2@256.webp",
+      "kb": 223
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e39-ghi-chu-giu@256.webp",
+      "kb": 266
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e01-chao-bt1@256.webp",
+      "kb": 193
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e02-suy-nghi-bt2@512.webp",
+      "kb": 519
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e42-cham-chu-bt2@256.webp",
+      "kb": 202
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e01-chao-bt2@256.webp",
+      "kb": 193
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e01-chao-bt2@512.webp",
+      "kb": 469
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e02-suy-nghi-bt1@512.webp",
+      "kb": 417
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e01-chao-bt3@512.webp",
+      "kb": 469
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e00-nghi-bt1@512.webp",
+      "kb": 400
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e39-ghi-chu-giu@512.webp",
+      "kb": 626
+    },
+    {
+      "path": "assets/emotes/webp/hanni-fox-e02-suy-nghi-bt2@256.webp",
+      "kb": 263
+    },
+    {
+      "path": "assets/assistant-button/webp/hanni-fox-n2-lo-len-chao@256.webp",
+      "kb": 525
+    },
+    {
+      "path": "assets/assistant-button/webp/hanni-fox-n7-dang-tra-loi@256.webp",
+      "kb": 552
+    },
+    {
+      "path": "assets/assistant-button/webp/hanni-fox-n6-co-tin-moi@512.webp",
+      "kb": 1155
+    },
+    {
+      "path": "assets/assistant-button/webp/hanni-fox-n3-duoc-cham@512.webp",
+      "kb": 694
+    },
+    {
+      "path": "assets/assistant-button/webp/hanni-fox-n2-lo-len-chao@512.webp",
+      "kb": 1310
+    },
+    {
+      "path": "assets/assistant-button/webp/hanni-fox-n1-nghi@256.webp",
+      "kb": 1390
+    },
+    {
+      "path": "assets/assistant-button/webp/hanni-fox-n7-dang-tra-loi@512.webp",
+      "kb": 1380
+    },
+    {
+      "path": "assets/assistant-button/webp/hanni-fox-n3-duoc-cham@256.webp",
+      "kb": 276
+    },
+    {
+      "path": "assets/assistant-button/webp/hanni-fox-n6-co-tin-moi@256.webp",
+      "kb": 463
+    },
+    {
+      "path": "assets/assistant-button/webp/hanni-fox-n1-nghi@512.webp",
+      "kb": 3484
+    }
+  ]
+}
